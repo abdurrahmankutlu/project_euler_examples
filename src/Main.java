@@ -6,6 +6,9 @@ public class Main {
 
         SolutionSet.pes001v01();
         SolutionSet.pes001v02();
-
+        SolutionSet.pes005v01();
+        SolutionSet.pes005v02();
+        SolutionSet.pes005v03();
+        SolutionSet.pes005v04();
     }
 }

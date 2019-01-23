@@ -57,6 +57,9 @@ class ProjectEulerSolutions {
         System.out.println("Sum of multiples of 3 or 5 below 1000: " + finalResult + "Calculater within nanoseconds: " + (endTime - startTime));
     }
 
+    /**
+     * Written by Abdurrahman Kutlu
+     */
     void pes005v01() {
         startTime = System.nanoTime();
         long commonMultiplier = 1;
@@ -76,6 +79,9 @@ class ProjectEulerSolutions {
         return a*b;
     }
 
+    /**
+     * Written by Emre Yavuz
+     */
     void pes005v02(){
         startTime = System.nanoTime();
 
@@ -99,6 +105,9 @@ class ProjectEulerSolutions {
         System.out.println("Lowest Common Multiplier for the numbers between 1-20: " + result + " Calculater within nanoseconds: " + (endTime - startTime));
     }
 
+    /**
+     * Written by Burak Doğan Akyıldız
+     */
     void pes005v03() {
         startTime = System.nanoTime();
         int baseLimit = 40;
@@ -152,6 +161,9 @@ class ProjectEulerSolutions {
         System.out.println("Lowest Common Multiplier for the numbers between 1-20: " + result + " Calculater within nanoseconds: " + (endTime - startTime));
     }
 
+    /**
+     * Written by Abdurrahman Kutlu
+     */
     void pes005v04() {
         startTime = System.nanoTime();
         long commonMultiplier = 1;

@@ -1,6 +1,3 @@
-import java.math.BigInteger;
-import java.util.*;
-
 /**
  * Project Euler Solutions naming of the functions is constructed as shortcut for ( Project Euler Solution ) as pes
  * and number of the solution follows 001 and if there is alternative version it is also added with a "v" character
@@ -55,6 +52,45 @@ class ProjectEulerSolutions {
 
         endTime = System.nanoTime();
         System.out.println("Sum of multiples of 3 or 5 below 1000: " + finalResult + "Calculater within nanoseconds: " + (endTime - startTime));
+    }
+
+    void pes002v01(){
+        startTime = System.nanoTime();
+        long count = fibonacciNumber(1L,2L,2L);
+        endTime = System.nanoTime();
+
+        System.out.print(" Calculater within nanoseconds: " + (endTime - startTime)+"\n");
+    }
+
+    private long fibonacciNumber(long a,long b,long total) {
+        if((a+b)>=4000000) {
+            System.out.print("Total even fibonacci numbers below 4m: " + total);
+            return total;
+        }
+        if((a+b)% 2 == 0)
+            total = total +a+b;
+        fibonacciNumber(b,a+b,total);
+        return total;
+    }
+
+    void pes002v02(){
+        startTime = System.nanoTime();
+
+        int z;
+        int sum = 0;
+        int x = 1;
+        int y = 2;
+        while (x <= 4000000) {
+            if (x % 2 == 0)
+                sum += x;
+            z = x + y;
+            x = y;
+            y = z;
+        }
+
+        endTime = System.nanoTime();
+        System.out.print("Total even fibonacci numbers below 4m: " + sum);
+        System.out.print(" Calculater within nanoseconds: " + (endTime - startTime)+"\n");
     }
 
     /**

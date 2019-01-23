@@ -9,7 +9,7 @@ class ProjectEulerSolutions {
 
 
     ProjectEulerSolutions() {
-        System.out.println("Welcome to solutions for the Project Euler, Written By Abdurrahman Kutlu & Emre Yavuz");
+        System.out.println("Welcome to solutions for the Project Euler, Written By Abdurrahman Kutlu & Emre Yavuz & Burak Doğan Akyıldız");
     }
 
     /**
